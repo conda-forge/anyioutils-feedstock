@@ -1,5 +1,5 @@
 {% set name = "anyioutils" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 69800442408763121e35d5466df09bf2e397e65499e57f333cd6ca5a9051355f
+  sha256: f370137137884aeb19def8ca2af162d814ef193c746ce7cbd0677ed8d38f2364
 
 build:
   noarch: python
@@ -21,7 +21,8 @@ requirements:
     - python {{ python_min }}
   run:
     - python >={{ python_min }}
-    - anyio
+    - anyio >=4.8.0,<5.0.0
+    - exceptiongroup
 
 test:
   imports:
