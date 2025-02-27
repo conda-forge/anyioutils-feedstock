@@ -1,5 +1,5 @@
 {% set name = "anyioutils" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 147cea4ac7591912a0090cdf5a5d143663029af5abcce213ec48b22c2d47f685
+  sha256: 256af866e6dffbe3cfef425562f9b1441fc3bc1d95139d511d2ee2dcedc247ed
 
 build:
   noarch: python
