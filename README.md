@@ -11,6 +11,8 @@ Summary: Utility classes and functions for AnyIO
 
 Development: https://github.com/davidbrochart/anyioutils
 
+Documentation: https://davidbrochart.github.io/anyioutils
+
 Current build status
 ====================
 
